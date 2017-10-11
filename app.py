@@ -40,6 +40,7 @@ def handle_message(event):
     user_id = profile.user_id
     reply = event.message.text
     print(user_id, ':', reply)
+    line_bot_api.push_message('U0afdbcb0630b271832b7f6d0bf99991e', TextSendMessage(text=reply))
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=reply))
