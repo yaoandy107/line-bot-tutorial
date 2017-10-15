@@ -37,8 +37,8 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = ImageSendMessage(
-        original_content_url='https://s3-us-west-1.amazonaws.com/niusnews-imgs/294266_1.jpg',
-        preview_image_url='https://s3-us-west-1.amazonaws.com/niusnews-imgs/294266_1.jpg')
+        original_content_url='https://pic.pimg.tw/pp021147/1320494894-3238121197.png',
+        preview_image_url='https://pic.pimg.tw/pp021147/1320494894-3238121197.png')
     line_bot_api.reply_message(
         event.reply_token,
         message)
