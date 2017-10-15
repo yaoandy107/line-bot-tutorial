@@ -37,8 +37,8 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = ImageSendMessage(
-        original_content_url='https://pic.pimg.tw/pp021147/1320494894-3238121197.png',
-        preview_image_url='https://pic.pimg.tw/pp021147/1320494894-3238121197.png')
+        original_content_url='https://i1.wp.com/travels.media/tc/wp-content/uploads/2014/11/meowparlour..png',
+        preview_image_url='https://i1.wp.com/travels.media/tc/wp-content/uploads/2014/11/meowparlour..png')
     line_bot_api.reply_message(
         event.reply_token,
         message)
