@@ -7,13 +7,13 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    MessageEvent, TextMessage, TextSendMessage,
+    MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 )
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
-handler = WebhookHandler('YOUR_CHANNEL_SECRET')
+line_bot_api = LineBotApi('N2GpmrsY58aYsKnZdK3kds71H+S9ENOLGCfG6J/lzdTZFankDggZBUdqWOyEPSqg9bVH2xw7ISvMU9vGZzTP/gEk1smuhTRqy3XVvwex1eevd8zIIZNfuo5DKDHz3slU0QvjmMvWZLurbu0BlEIUiAdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('d1870fbf70dd66d23a02eb791e2a7ab1')
 
 
 @app.route("/callback", methods=['POST'])
@@ -36,10 +36,12 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    reply = event.message.text
+    message = ImageSendMessage(
+        original_content_url='https://i.ytimg.com/vi/bLltMkKxmYA/maxresdefault.jpg',
+        preview_image_url='http://pic01.lanimg.com/141228/330267-14122P1242395-lp.jpg')
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=reply))
+        message)
 
 import os
 if __name__ == "__main__":
