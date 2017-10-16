@@ -36,9 +36,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = ImageSendMessage(
-        original_content_url='https://www.iamxk.com/wp-content/uploads/2017/09/page_1-01-.jpg',
-        preview_image_url='https://www.iamxk.com/wp-content/uploads/2017/09/page_1-01-.jpg')
+    message = TextSendMessage(text='Hello World')
     line_bot_api.reply_message(
         event.reply_token,
         message)
