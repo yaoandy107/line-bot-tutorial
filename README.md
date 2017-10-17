@@ -1,5 +1,4 @@
 # Line Bot 教學
-> 本教學由 **北科程式設計研究社** 所屬[name=姚韋辰]
 
 本教程介紹如何使用 Python LINE Bot SDK 在 Heroku 上架設一個簡單的 “echo” 機器人。
 
