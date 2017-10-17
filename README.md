@@ -14,7 +14,7 @@
 
 確保您具有以下內容：
 
-- 為您的機器人創建了一個頻道 [#教學](https://developers.line.me/en/docs/line-login/getting-started/)
+- 在 Line 的控制台為您的機器人創建了一個頻道 [#教學](https://developers.line.me/en/docs/line-login/getting-started/)
 - 一個 [Heroku](https://www.heroku.com) 的帳戶（您可以免費創建一個）
 
 ## 架設範例機器人
