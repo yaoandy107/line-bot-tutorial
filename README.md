@@ -62,6 +62,8 @@ git add .
 ```shell
 git commit -m "Init"
 ```
+注意："Init" 可使用任意文字替換，其為此紀錄點的敘述
+
 8. 將在 git 清單中的檔案上傳到 heroku，請確認訊息是否顯示成功
 ```shell
 git push heroku master
