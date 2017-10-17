@@ -1,4 +1,5 @@
 # Line Bot 教學
+> 本教學由 **北科程式設計研究社** 所屬[name=姚韋辰]
 
 本教程介紹如何使用 Python LINE Bot SDK 在 Heroku 上架設一個簡單的 “echo” 機器人。
 
@@ -21,13 +22,17 @@
 
 按照以下步驟架設一個學舌鳥機器人。
 
-1. 從 [控制台](https://developers.line.me/console/) 獲取 channel secret 和 channel access token
+
 1. 在 [Heroku](https://dashboard.heroku.com/apps) 頁面中，點選 New -> Create New App
 1. 輸入自己喜歡的 App name ，然後點擊 Create app
 1. 下載 [範例程式碼](https://github.com/yaoandy107/line-bot-tutorial/archive/master.zip)
-1. 使用編輯器開啟程式碼，修改 
+1. 從 [Line 控制台](https://developers.line.me/console/) 獲取 **channel secret** 和 **channel access token**
+1. 使用編輯器開啟範例程式碼資料夾內的 app.py，填入 **channel secret** 和 **channel access token**
+![](https://i.imgur.com/Uz16joi.png)
+
 1. 並使用 Heroku CLI 將程式部署到 Heroku 上面 （請參考 [使用 Heroku CLI](#使用-heroku-cli)）
-1. 使用以下 URL 格式在控制台中輸入 webhook URL {HEROKU_APP_NAME}.herokuapp.com/callback
+1. 使用以下 URL 格式在控制台中輸入 webhook URL 
+`{HEROKU_APP_NAME}.herokuapp.com/callback`
 注意：{HEROKU_APP_NAME} 是步驟3中的應用程序名稱
 1. 通過在控制台的 “Channel settings” 頁面上掃描 QR Code，將您的機器人添加到 LINE 的朋友中
 1. 在 Line 上向您的機器人發送文字訊息，並確認它使用相同的訊息進行回應
