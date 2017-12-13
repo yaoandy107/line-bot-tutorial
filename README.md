@@ -116,7 +116,7 @@ line_bot_api.reply_message(reply_token, 訊息物件)
 ```
 #### 主動傳送訊息
 ```
-帶補充
+待補充
 ```
 
 ### 傳送訊息物件
