@@ -10,7 +10,7 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 )
 
-app = Flask(＿_name__)
+app = Flask(__name__)
 
 # Channel Access Token
 line_bot_api = LineBotApi('YOUR_CHANNEL_ACCESS_TOKEN')
