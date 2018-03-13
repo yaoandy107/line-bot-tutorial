@@ -34,7 +34,7 @@
   ![](https://i.imgur.com/entIggx.png)
 6. 使用編輯器開啟範例程式碼資料夾內的 app.py，填入 **channel secret** 和 **channel access token**
   ![](https://i.imgur.com/Uz16joi.png)
-7. 並使用 Heroku CLI 將程式部署到 Heroku 上面 （請參考 [使用 Heroku CLI](#使用-Heroku-CLI)）
+7. 並使用 Heroku CLI 將程式部署到 Heroku 上面 （請參考 [使用 Heroku CLI](#使用-heroku-cli)）
 8. 使用以下 URL 格式在控制台中輸入 webhook URL 
   `{HEROKU_APP_NAME}.herokuapp.com/callback`
   注意：{HEROKU_APP_NAME} 是步驟2中的應用程序名稱
