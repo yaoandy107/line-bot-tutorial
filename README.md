@@ -46,16 +46,16 @@
 1. 下載並安裝 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)、[Git](https://git-scm.com/)
 2. 開啟範例程式碼資料夾，在路徑上輸入 cmd
 3. 使用終端或命令行應用程序登錄到 Heroku
-```shell＝
+```shell
 heroku login
 ```
 4. 初始化 git
-``` shell=
+``` shell
 $ git config --global user.name "你的名字"
 $ git config --global user.email 你的信箱
 ```
 5. 將資料夾初始成 git 空間
-```shell＝
+```shell
 git init
 ```
 6. 用 git 將資料夾與 heroku 連接
