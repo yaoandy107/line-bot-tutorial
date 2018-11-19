@@ -97,7 +97,7 @@
     ```shell
     git add .
     git commit -m "Add code"
-    git push heroku master
+    git push -f heroku master
     ```
     **每當需要更新 Bot 時，請重新輸入上述指令**
 
