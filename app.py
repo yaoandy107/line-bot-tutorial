@@ -33,7 +33,23 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=event.message.text)
+    message = TemplateSendMessage(
+    alt_text='Confirm template',
+    template=ConfirmTemplate(
+        text='Are you sure?',
+        actions=[
+            PostbackTemplateAction(
+                label='postback',
+                text='postback text',
+                data='action=buy&itemid=1'
+            ),
+            MessageTemplateAction(
+                label='message',
+                text='message text'
+            )
+        ]
+    )
+)
     line_bot_api.reply_message(event.reply_token, message)
 
 import os
